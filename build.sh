@@ -13,3 +13,5 @@ if [ $INSTANCE_RUNNING -gt 1 ] ; then
 fi
 
 docker run --name prod-devops -d julespeyronnet/devopsbilly
+
+return 0
