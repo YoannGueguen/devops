@@ -12,6 +12,4 @@ if [ $INSTANCE_RUNNING -gt 1 ] ; then
     docker rm prod-devops
 fi
 
-docker run --name prod-devops -d julespeyronnet/devopsbilly
-
-return 0
+docker run --name prod-devops -p 80:80 -d julespeyronnet/devopsbilly
