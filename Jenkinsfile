@@ -1,6 +1,7 @@
 node {
     stage ("Docker Build") {
           checkout scm
-          sh "sudo docker build -t julespeyronnet/devopsbilly ."
+          sh "sudo chmod +x build.sh"
+          sh "sudo ./build.sh"
     }
 }
