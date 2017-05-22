@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INSTANCE_RUNNING=`sudo docker ps --filter="ancestor=julespeyronnet/devopsbilly" | wc -l`
+INSTANCE_RUNNING=`docker ps --filter="ancestor=julespeyronnet/devopsbilly" | wc -l`
 
 # Build docker image
 docker build -t julespeyronnet/devopsbilly .
